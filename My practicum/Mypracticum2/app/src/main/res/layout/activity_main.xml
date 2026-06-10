@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D1B2A">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🏕 Campsite Commander"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#F4A261"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camping Inventory Manager"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Total Items Card -->
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Items Packed: 0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#1B4332"
+            android:padding="16dp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Item Name -->
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Item Name"
+            android:backgroundTint="#F4A261"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#BDBDBD"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Category -->
+        <EditText
+            android:id="@+id/edtCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Category"
+            android:backgroundTint="#F4A261"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#BDBDBD"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Quantity -->
+        <EditText
+            android:id="@+id/edtQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Quantity"
+            android:inputType="number"
+            android:backgroundTint="#F4A261"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#BDBDBD"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Comments -->
+        <EditText
+            android:id="@+id/edtComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Notes / Comments"
+            android:minLines="3"
+            android:gravity="top"
+            android:backgroundTint="#F4A261"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#BDBDBD"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Add Button -->
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="➕ Add Gear"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- View Button -->
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📋 View Packing List"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</ScrollView>
